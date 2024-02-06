@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.quiz-image {
+  position: absolute; /* Set the image to absolute position */
+  top: 495px; /* Adjust the image position from the top */
+  left: 170px; 
+  width: 180px;
+  max-width: 100%;
+  height: 130px;/* Adjust the image position from the left */
+}
+
+.quiz-image2 {
+  position: absolute; /* Set the image to absolute position */
+  top: 640px; /* Adjust the image position from the top */
+  left: 170px; 
+  width: 180px;
+  max-width: 100%;
+  height: 130px;/* Adjust the image position from the left */
+}
+
+  .background-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('wall.jpg'); /* Specify your relaxing image path */
+    background-size: cover;
+    z-index: -1;
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: auto;
+  }
+
+  .quiz-form {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
+}
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #quiz {
+    font-size: large;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+  .question {
+    margin-bottom: 10px;
+  }
+  
+  #result {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  #timer {
+    position: absolute;
+    top: 10px; /* Adjust top positioning */
+    left: 20px; /* Adjust left positioning */
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quiz-form {
+      width: 90%;
+    }
+  }

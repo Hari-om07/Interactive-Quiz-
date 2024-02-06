@@ -1,0 +1,164 @@
+body {
+    font-family: Calibri, sans-serif;
+    background-color: black;
+    padding: 0px;
+    margin: 0;
+}
+
+#bg-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#bg-wrap svg {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 100pxo;
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+    padding-top: 20px;
+    color: #ffffff;
+    padding-left: 10px; /* Adjust as needed */
+    font-size: 36px; /* Adjust as needed */
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.joinBtn {
+    width: 100%;
+    height: 5ex;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.joinBtn:active {
+    box-shadow: 2px 2px 5px #ffcccb;
+}
+.form-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;  
+    margin: auto;
+    position: relative; /* Ensure positioning within the background container */
+    z-index: 1;
+}
+
+.form-container h2 {
+    margin-top: 0;
+}
+
+.form-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+#signInForm {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+#signInForm label {
+display: inline-block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+#signInForm input[type="text"],
+#signInForm input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+}
+
+#signInForm button {
+width: 100%;
+padding: 10px;
+background-color: #007bff;
+border: none;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+}
+
+#loginForm label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    }
+/* Example Login form styles */
+#loginForm {
+background-color: rgba(255, 255, 255, 0.7);
+padding: 20px;
+border-radius: 8px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+width: 80%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 15px;
+}
+
+#loginForm button {
+width: 100%;
+padding: 10px;
+background-color: #fff;
+border: none;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+    header {
+        height: 60px;
+    }
+
+    .form-container {
+        max-width:none;
+    }
+}
